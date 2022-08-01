@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rampart+One&display=swap');
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --font-heading: 'Rampart One', cursive;
+  --blue: #1D2951;
+  --red: rgba(255,44,44,1);
+  --yellow: rgba(245,221,41,1);
+
+  --gunmetal: rgb(42, 52, 57);
+  --g1: rgb(110, 98, 89);
+  --g2: rgb(209, 203, 193);
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.b {
+  background-color: var(--blue);
+}
+
+#back-btn {
+  color: var(--blue);
+  font-size: 4rem;
+  margin: 1rem 0 -4rem 1rem;
+}
+
+#back-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    letter-spacing: .2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+  }
+
+#board {
+    border: .4rem solid black;
+    background-color: var(--blue);
+    box-shadow: .8rem .6rem .6rem #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15rem;
+    width: 70.18rem;
+    height: 60.5rem;
+    margin-top: 12rem;
+}
+
+#btn-close {
+  align-self: flex-end;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin: 1rem 1rem -2rem 0;
+}
+
+#btn-close:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.btn-group button:first-child {
+  margin-bottom: 2rem;
+}
+
+.btn-std {
+  font-size: 3rem;
+  padding: 1rem;
+  width: 18rem;
+  height: 6rem;
+}
+
+button {
+  align-self: center;
+  background-color: var(--blue);
+  border-radius: 4.5rem;
+  border: 2px solid white;
+  box-shadow: .4rem .2rem .2rem #000;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #041038;
+  box-shadow: none;
+}
+
+.disabled {
+  color: #AAA;
+  cursor: default!important;
+  pointer-events: none;
+}
+
+.g1 {
+  background-color: var(--g1);
+}
+
+.g2 {
+  background-color: var(--g2);
+}
+
+.g3 {
+  background-color: var(--gunmetal);
+}
+
+.game-type {
+  height: 14rem;
+  width: 24rem;
+  font-size: 8rem;
+}
+
+.game-type span {
+  font-size: 6rem;
+}
+
+.game-type:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.game-type:last-child {
+  margin-bottom: 2rem;
+}
+
+#game-type-selection {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  margin-left: 1rem;
+  width: 33%;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+header {
+  background: radial-gradient(circle, rgba(29,41,81,1) 51%, rgba(0,0,0,1) 100%);
+  border-bottom: solid .6rem;
+  border-image: linear-gradient(90deg, var(--yellow) 50%, var(--red) 50%) 5;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 6rem;
+  line-height: 1rem;
+  padding: 1rem;
+  width: 100vw;
+  top: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+#menu {
+  cursor: pointer;
+  font-size: 6rem;
+  margin-bottom: 10rem;
+}
+
+.name {
+  display: flex;
+}
+
+.name label {
+  font-size: 2rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.name label:first-child {
+  margin-bottom: 1rem;
+}
+
+.name input {
+  font-size: 2rem;
+  margin-right: 1rem;
+  height: 2rem;
+  width: 60%;
+}
+
+.player-name {
+  display: flex;
+}
+
+.player-name .square {
+  margin-right: 1rem;
+}
+
+#names {
+  display: flex;
+  font-size: 2.2rem;
+  justify-content: space-around;
+  line-height: 1rem;
+  margin-right: 6rem;
+}
+
+#names .square {
+  width: 5rem;
+  height: 5rem;
+}
+
+#p1name {
+  margin-right: 4rem;
+}
+
+#prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  background-color: #FFFFFF;
+  border: .4rem solid var(--red);
+  border-bottom: .4rem solid var(--yellow);
+  border-right: .4rem solid var(--yellow);
+  border-radius: 1.5rem;
+  box-shadow: 1.2rem .5rem .6rem #000;
+  left: calc(50% - 20rem);
+  top: 22rem;
+  z-index: 1;
+  width: 40rem;
+  height: 40rem;
+}
+
+.r {
+  background: var(--red);
+  background: -moz-radial-gradient(circle, rgba(255,86,86,1) 29%, var(--red) 44%);
+  background: -webkit-radial-gradient(circle, rgba(255,86,86,1) 29%, var(--red) 44%);
+  background: radial-gradient(circle, rgba(255,86,86,1) 29%, var(--red) 44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5656",endColorstr="#ff2c2c",GradientType=1);
+}
+
+#random-label {
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -0.2rem;
+  text-align: center;
+}
+
+#random input[type="radio"]:checked + label {
+  border: .4rem solid black;
+  outline: .4rem solid black;
+}
+
+.random-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#sidebar {
+  background-color: #444;
+  border: .4rem solid black;
+  border-left: .3rem solid #222;
+  border-radius: 0 4.5rem 4.5rem 0;
+  box-shadow: .4rem .2rem .4rem #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 14rem;
+  height: 55rem;
+  margin-top: 15rem;
+}
+
+#sidebar .square {
+  cursor: auto;
+  width: 9rem;
+  height: 9rem;
+}
+
+.square {
+  border: .4rem solid black;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  width: 7.865rem;
+  height: 7.865rem;
+}
+
+#tokens {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+#tokens input[type="radio"]:checked + label {
+  border: .4rem solid black;
+}
+
+#tokens label:hover {
+  cursor: pointer;
+}
+
+#tokens {
+  width: 100%;
+}
+
+#tokens .square {
+  border: .2rem solid  #1D2951;
+  margin-top: 1.2rem;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+#tokens .square {
+  cursor: auto;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+#tokens .square:first-child {
+  margin-right: 2rem;
+}
+
+#token-select {
+  text-align: center;
+}
+
+#turn {
+  text-align: center;
+}
+
+#turn .square {
+  background-color: #BBB;
+}
+
+ul {
+  align-self: center;
+  font-size: 2.6rem;
+  flex-basis: 100%;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+li:hover {
+  list-style-type: ">> ";
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#undo {
+  cursor: pointer;
+  font-size: 6rem;
+}
+
+.y {
+  background: rgb(247,228,84);
+  background: -moz-radial-gradient(circle, rgba(247,228,84,1) 29%, var(--yellow) 44%);
+  background: -webkit-radial-gradient(circle, rgba(247,228,84,1) 29%, var(--yellow) 44%);
+  background: radial-gradient(circle, rgba(247,228,84,1) 29%, var(--yellow) 44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7e454",endColorstr="#f5dd29",GradientType=1);
+}

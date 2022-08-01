@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Connect 4</h1>
+        <span id="names">
+            <span class="player-name"><div class="square" id="p1token"></div><p id="p1name"></p></span>
+            <span class="player-name"><div class="square" id="p2token"></div><p id="p2name"></p></span>
+        </span>
+    </header>
+
+    <div id="prompt">
+    </div>
+
+    <div id="board">
+    </div>
+
+    <div id="sidebar">
+        <div id="turn">
+            <h3>Turn:</h3>
+            <div class="square" id="currPlayer"></div>
+            <p id="curr-player-name"></p>
+        </div>
+        <span class="material-symbols-outlined disabled" id="undo">
+            undo
+        </span>
+        <span class="material-symbols-outlined disabled" id="menu">
+            menu
+        </span>
+    </div>
+</body>
+</html>
